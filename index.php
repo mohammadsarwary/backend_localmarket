@@ -51,30 +51,40 @@ try {
             case 'register':
                 if ($method === 'POST') {
                     $controller->register();
+                } else {
+                    Response::error('Method not allowed. Use POST', 405);
                 }
                 break;
 
             case 'login':
                 if ($method === 'POST') {
                     $controller->login();
+                } else {
+                    Response::error('Method not allowed. Use POST', 405);
                 }
                 break;
 
             case 'refresh':
                 if ($method === 'POST') {
                     $controller->refresh();
+                } else {
+                    Response::error('Method not allowed. Use POST', 405);
                 }
                 break;
 
             case 'logout':
                 if ($method === 'POST') {
                     $controller->logout();
+                } else {
+                    Response::error('Method not allowed. Use POST', 405);
                 }
                 break;
 
             case 'me':
                 if ($method === 'GET') {
                     $controller->me();
+                } else {
+                    Response::error('Method not allowed. Use GET', 405);
                 }
                 break;
 
