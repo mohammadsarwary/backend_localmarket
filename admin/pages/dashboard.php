@@ -294,7 +294,7 @@ include '../includes/sidebar.php';
 </div>
 
 <script>
-const API_BASE_URL = '../../admin_api.php';
+const API_BASE_URL = '/admin_api.php';
 
 async function loadDashboardStats() {
     try {

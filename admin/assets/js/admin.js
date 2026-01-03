@@ -1,4 +1,4 @@
-const API_BASE_URL = '../admin_api.php';
+const API_BASE_URL = '/admin_api.php';
 
 function getAuthToken() {
     return localStorage.getItem('admin_token');

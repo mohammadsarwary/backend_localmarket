@@ -313,7 +313,7 @@
     </div>
 
     <script>
-        const API_BASE_URL = '../admin_api.php';
+        const API_BASE_URL = '/admin_api.php';
         const loginForm = document.getElementById('loginForm');
         const loginBtn = document.getElementById('loginBtn');
         const alert = document.getElementById('alert');
