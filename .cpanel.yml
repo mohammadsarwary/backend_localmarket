@@ -1,0 +1,13 @@
+---
+deployment:
+  targets:
+    production:
+      domain: example.com
+      path: /
+      restart_app: false
+      build:
+        commands:
+          - "composer install --no-dev"
+      post_deploy:
+        commands:
+          - "php setup_admin.php"
