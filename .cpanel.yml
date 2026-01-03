@@ -5,6 +5,10 @@ deployment:
       domain: example.com
       path: /
       restart_app: false
+      pre_build:
+        commands:
+          - "git reset --hard HEAD"
+          - "git clean -fd"
       build:
         commands:
           - "composer install --no-dev"
