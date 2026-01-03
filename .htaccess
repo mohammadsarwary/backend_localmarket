@@ -8,6 +8,7 @@ RewriteBase /api/
 RewriteCond %{REQUEST_URI} ^/api/uploads/
 RewriteRule ^ - [L]
 
+
 # Route all other requests to index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
